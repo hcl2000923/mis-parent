@@ -1,0 +1,19 @@
+server:
+  port: 8080     #http://localhost:8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 232328
+    url: jdbc:mysql://localhost:3306/testmis81
+  cloud:
+    zookeeper:
+      connect-string: localhost:2181
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+mapper:
+  identity: MYSQL
+logging:
+  level:
+    com.yc.springcloud81.misprovider.dao: debug    #  None, fatal,error,warning,info,debug,all
